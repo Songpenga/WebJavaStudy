@@ -4,24 +4,25 @@ package j02_변수상수;
 public class Variable {
     public static void main(String[] args) {
         // 논리자료형 변수
-        boolean checkFlag = false;  // 선언
+        boolean checkFlag = false;
         System.out.println(checkFlag);
         checkFlag = true;
         System.out.println(checkFlag);
 
     // 문자 자료형 변수
-        char name1 = '김';
-        char name2 = '준';
-        char name3 = '일';
+        char name1 = 'P';
+        char name2 = 'E';
+        char name3 = 'N';
+       // char name4 = 'G';
         System.out.println("" + name1+name2+name3 + ""); //147132 문자열로 인식하게
         System.out.println(name1);
         System.out.println(name2);
         System.out.println(name3);
-        System.out.println('가'+0);
+       // System.out.println(name4);
 
         //문자열 자료형 변수
-        String name = "김준일";
-        String name4 = "윤도영";
+        String name = "Pe";
+        String name4 = "--ng";
         String name5 = name + name4;
         System.out.println(name5);
 
