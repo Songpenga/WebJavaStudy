@@ -10,6 +10,7 @@ public class Loop1 {
 
         for (int i = 0; i < 100; i++) {
             result += i+1;
+            System.out.println(i);
 
         }
 
