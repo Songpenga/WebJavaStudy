@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Input1 {
     public static void main(String[] args) {
-        String name = "김준일";
+        String name = "Peng";
         Scanner scanner = new Scanner(System.in); //Ctrl + space, 애만 여기에 대입 가능, 자료형 : 스캐너, 입력가능
 // 대입으로 system.in 을 씀. system.out은 출력.  system.in은 입력
         String s = scanner.nextLine();

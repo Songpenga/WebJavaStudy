@@ -1,8 +1,8 @@
 package j04_연산자;
 
 public class operation5 {
-    public static void main(String[] args) {
-        int totalCount = 202;
+    public static void main(String[] args) { //삼항연산자
+        int totalCount = 2022;
         int maxPage = totalCount % 10 == 0 ? totalCount / 10 : totalCount / 10 + 1 ; // 마지막 페이지 번호
         int page = 15;
 

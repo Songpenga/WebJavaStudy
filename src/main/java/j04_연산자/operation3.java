@@ -5,7 +5,7 @@ package j04_연산자;
 public class operation3
 {
     public static void main(String[] args) {
-        int year = 2000;
+        int year = 2022;
 
         boolean result = false;
 
