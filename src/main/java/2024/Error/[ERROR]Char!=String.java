@@ -51,11 +51,11 @@ public class login {
 		// "" => String
 		// user_select는 String 인데 equals에서 ''로 문자를 비교해 오류가 남(문자와 문자열 형이 달라 인식을 못함)
 				if(user_select.equals("A")) {
-					return cbase.RedirectPost(request.getContextPath() + "/CST/RF_01/RF_01_01_010.do");
+					return cbase.RedirectPost(request.getContextPath() + "/login1.do");
 				}
 				
 				if(user_select.equals("B")){
-					return cbase.RedirectPost(request.getContextPath() + "/CST/RF_01/RF_01_02_010.do");
+					return cbase.RedirectPost(request.getContextPath() + "/login2.do");
 				}
 				
 
