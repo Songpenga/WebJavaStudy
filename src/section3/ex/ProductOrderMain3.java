@@ -1,13 +1,33 @@
 package section3.ex;
 
-public class ProductOrderMain2 {
+import java.util.Scanner;
+
+public class ProductOrderMain3 {
     public static void main(String[] args) {
-        ProductOrder[] orders = new ProductOrder[3];
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("주문 개수 :");
+        int n = scanner.nextInt();
+        scanner.nextLine();
 
-        orders[0] = createOrder("프로틴", 32000, 1);
-        orders[1] = createOrder("브로콜리", 7000, 2);
-        orders[2] = createOrder("카레", 2300, 2);
+        ProductOrder[] orders = new ProductOrder[n];
+
+        for (int i = 0; i < orders.length; i++){
+            System.out.println((i+1) + "번쨰 주문 정보 입력");
+
+            System.out.println("상품명 : ");
+            String product = scanner.nextLine();
+
+            System.out.println("가격 : ");
+            int price = scanner.nextInt();
+
+            System.out.println("수량 : ");
+            int quantity = scanner.nextInt();
+            scanner.nextLine();//입력 버퍼를 비우기 위한 코드
+
+            orders[i] = createOrder(product, price, quantity);
+        }
+
         printOrders(orders);
         int totalAmount = getTotalAmount(orders); // ctrl + alt + v
 
