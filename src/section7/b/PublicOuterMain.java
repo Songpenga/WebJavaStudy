@@ -1,4 +1,13 @@
 package section7.b;
 
+import section7.a.PublicClass;
+
 public class PublicOuterMain {
+    public static void main(String[] args) {
+        PublicClass publicClass = new PublicClass();
+
+        //다른 패키지 접근 불가
+/*        DefaultClass1 class1 = new DefaultClass1();
+        DefaultClass2 class2 = new DefaultClass2();*/
+    }
 }
