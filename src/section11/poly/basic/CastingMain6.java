@@ -3,13 +3,25 @@ package section11.poly.basic;
 //upcasting vs downcasting
 public class CastingMain6 {
     public static void main(String[] args) {
-        Parent parent1 = new Child();
-        Child child1 = (Child) parent1;
-        child1.childMethod(); //문제 없음
+        Parent parent1 = new Parent();
+        System.out.println(
+                "parent1 호출"
+        );
+        call(parent1);
 
-        Parent parent2 = new Parent();
+        Parent parent2 = new Child();
+        System.out.println(
+                "parent22 호출"
+        );
+        call(parent2);
+    }
 
-        Child child2 = (Child) parent2; //런타임 오류 - ClassCastException
-        child2.childMethod(); //실행 불가
+    private static void call(Parent parent) {
+        parent.parentMethod();
+        //Child 인스턴스인 경우 childMethod() 실행
+        if(parent instanceof Child child){
+            System.out.println("child 인스턴스");
+            child.childMethod();
+        }
     }
 }
