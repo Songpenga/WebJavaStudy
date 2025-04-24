@@ -20,7 +20,6 @@ public class ClassMetaMain {
             System.out.println("Method :" + methods);
         }
 
-
         // 상위 클래스 정보 출력
         System.out.println("Superclass: " + clazz1.getSuperclass().getName());
 
