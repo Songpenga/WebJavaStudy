@@ -25,7 +25,7 @@ public class WrapperVsPrimitive {
         }
         endTime = System.currentTimeMillis();
         System.out.println("sumWrapper = " + sumWrapper );
-        System.out.println("기본 자료형 long 실행시간 ::  " + (endTime - startTime) + "ms" );
+        System.out.println("래퍼 클래스 long 실행시간 ::  " + (endTime - startTime) + "ms" );
 
     }
 }
