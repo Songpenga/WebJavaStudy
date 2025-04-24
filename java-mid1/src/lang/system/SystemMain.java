@@ -31,6 +31,6 @@ public class SystemMain {
         System.out.println("Array.toString ::: " + Arrays.toString(copyArray));
 
         // 프로그램 종료
-        System.exit(0);
+        System.exit(0);  // 가급적이면 사용하면 안됨
     }
 }
