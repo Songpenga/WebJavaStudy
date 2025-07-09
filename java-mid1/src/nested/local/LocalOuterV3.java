@@ -9,7 +9,7 @@ public class LocalOuterV3 {
     public Printer process(final int param){
         int localVar = 11; //지역변수는 스택 프레임이 종료되는 순간 함께 제거된다.
 
-        localVar = 22;
+        //localVar = 22;
         // 지역변수는 중간에 값이 바뀌면 안된다.
         //  error :: 변수 'localVar'은(는) 내부 클래스 내에서 액세스되므로 final 또는 유사 final이어야 합니다
 
