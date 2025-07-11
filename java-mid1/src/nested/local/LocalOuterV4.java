@@ -24,8 +24,9 @@ public class LocalOuterV4 {
         LocalPrinter printer = new LocalPrinter();
         // 만약 localVar의 값을 변경한다면?
         // localVar = 19; // 에러가남
+        //
 
-        param = 299;
+        //        param = 299;
         //변수 'param'은(는) 내부 클래스 내에서 액세스되므로 final 또는 유사 final이어야 합니다
 
         return printer;
